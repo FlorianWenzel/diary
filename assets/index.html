@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>diary</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="uikit/css/uikit.css">
+    <link rel="stylesheet" href="../node_modules/quill/dist/quill.core.css">
+    <link rel="stylesheet" href="../node_modules/quill/dist/quill.snow.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Charm|Gloria+Hallelujah|Indie+Flower|Shadows+Into+Light" rel="stylesheet">
+</head>
+
+<body>
+<div id="login_screen" class="uk-text-center uk-padding">
+    <h1 class="uk-h1 uk-margin-large-top">diary</h1>
+    <input id="username_input" class="uk-input uk-margin-bottom" type="text" placeholder="username">
+    <input id="password_input" class="uk-input" type="password" placeholder="password">
+    <a id="login_button" class="uk-button uk-button-primary uk-margin">login</a>
+    <a id="register_button" class="uk-button uk-button-primary uk-margin">register</a>
+</div>
+<div id="entry_wrapper" class="hidden">
+    <div id="entry_head">
+        <span id="entry_icon_wrapper" style="height:40px;" class="uk-text-center uk-float-left uk-width-1-6"><i id="entry_icon" class="fas fa-dice" style="line-height: 40px; font-size: 33px;"></i></span>
+        <input id="entry_title_input" class="uk-input uk-width-1-2" title="">
+        <span id="save_entry_button" style="height:40px;" class="uk-button  uk-button-primary uk-width-1-6 uk-float-right"><i class="fas fa-save" style="line-height: 40px; font-size: 33px;"></i></span>
+        <input id="entry_date_input" class="uk-input uk-width-1-6 uk-float-right" title="">
+    </div>
+    <div id="entry_content">
+    </div>
+</div>
+<a id="show_entry_list" style="color: #333;" class="hidden" uk-toggle="target: #side_menu"><i class="fas fa-angle-right fa-2x"></i></a>
+
+<div id="side_menu" uk-offcanvas="mode: reveal; overlay: true">
+    <div class="uk-offcanvas-bar">
+        <ul id="entry_list" class="uk-list uk-list-striped uk-text-center">
+        </ul>
+        <div id="delete_entry_button"><i class="fas fa-trash"></i></div>
+    </div>
+</div>
+<script src="js/script.js"></script>
+<script src="uikit/js/uikit.js"></script>
+</body>
+
+</html>

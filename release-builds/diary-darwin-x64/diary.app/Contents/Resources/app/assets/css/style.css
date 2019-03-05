@@ -1,0 +1,79 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    user-select: none;
+    height: 100vh;
+    /*font-family: 'Charm', cursive;*/
+    font-family: 'Indie Flower', cursive!important;
+    background-size: cover;
+    background: #fff url("../img/background.png") no-repeat center center fixed;
+    /*font-family: 'Shadows Into Light', cursive;
+    font-family: 'Gloria Hallelujah', cursive;*/
+}
+h1, h2, h3, p, .ql-editor{
+    font-family: 'Indie Flower', cursive!important;
+}
+input, textarea{
+    background-color: #fff!important;
+}
+.delete-entry:hover {
+    background-color: #ec2147!important;
+}
+#delete_entry_button {
+    position: sticky;
+    text-align: right;
+    padding-right: 10px;
+    bottom: 5px;
+    right: 10px;
+}
+#delete_entry_button i:hover{
+    color: #ec2147;
+    cursor: pointer;
+
+}
+#entry_wrapper {
+    height: 100vh;
+}
+#entry_content {
+    height: calc(100% - 40px - 44px);
+    overflow-y: scroll;
+}
+#entry_title_input, #entry_date_input {
+    text-align: center;
+}
+.ql-editor, .ql-toolbar {
+    background-color: #fff;
+}
+#show_entry_list{
+    position: absolute;
+    left: 5px;
+    top: calc(50vh - 16px);
+}
+#login_screen {
+    height: 100vh;
+    background-color: #fff;
+}
+.uk-list {
+    margin-top: 0;
+}
+.hidden, .ql-link {
+    display: none!important;
+}
+ul.uk-list > li.list-entry, #add_entry_button{
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+}
+ul.uk-list > li.list-entry:hover, #add_entry_button:hover{
+    background-color: #1e87f0;
+    color: white;
+}
+.list-icon{
+    float: left;
+}
+.list-date{
+    float: right;
+}
+div.uk-offcanvas-bar{
+    padding: 0;
+}
